@@ -1,5 +1,5 @@
 var express = require('express')
-
+const consumer=require('../kafka/consumer.js')
 var app = express()
 
 app.use(express.json())
@@ -10,3 +10,4 @@ microroutes(app)
 app.listen(5050, function() {
     console.log("server started")
 })
+consumer()

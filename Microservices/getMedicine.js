@@ -9,6 +9,7 @@ const url="http://localhost:5000/api/medicine/view";
 
 const loginurl="http://localhost:5000/api/admin/login";
 const url2="http://localhost:5000/api/medicine/";
+const reorderurl = "http://localhost:5000/api/admin/reordermedicine"
 
 var MedicinDetails=
 {
@@ -61,7 +62,12 @@ var MedicinDetails=
   res.send("succcesssfull")
    
     },
-
+    reorderMed: function(req, res) {
+      axios({ method: 'post', url: reorderurl+'reordermedicines', data: req.body}).then((e)=>{
+          console.log(e.data);
+          res.send("reorder medicine Added. "+e.data)
+      })
+  }
    
 }
 module.exports=MedicinDetails
