@@ -32,11 +32,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ManasiDeshmukh/nodeapi.git"
+    "url": "git+https://github.com/thedarkdivinity/networkingkafka.git"
   },
   "bugs": {
-    "url": "https://github.com/ManasiDeshmukh/nodeapi/issues"
+    "url": "https://github.com/thedarkdivinity/networkingkafka/issues"
   },
-  "homepage": "https://github.com/ManasiDeshmukh/nodeapi#readme",
+  "homepage": "https://github.com/thedarkdivinity/networkingkafka#readme",
   "description": ""
 }
