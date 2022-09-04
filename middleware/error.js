@@ -1,9 +1,9 @@
-const errorHandler=(err,req,res,next)=>{
+const errorHandler = (err, req, res, next) => {
 
-    const statusCode=res.statusCode?res.statusCode:500;
-   // res.sendStatus(statusCode)
+    const statusCode = res.statusCode ? res.statusCode : 500;
+    // res.sendStatus(statusCode)
     res.json({
-        "message":err.message
+        "message": err.message
     })
 }
-module.exports={errorHandler}
+module.exports = { errorHandler }
