@@ -37,6 +37,39 @@ const userSchema=mongoose.Schema({
         type:String,
       
     },
+    criticalMedicines: [{type:String}],
+    order_bucket:
+        [
+            {
+                itemName: {
+                    type: String
+                },
+                quantity: {
+                    type: Number
+                },
+                price: {
+                    type: Number
+                },
+                status: {
+                    type: String,
+                    default: "Not Paid"
+                }
+            }
+        ],
+    reorder_bucket:
+        [
+            {
+                itemName: {
+                    type: String
+                },
+                quantity: {
+                    type: Number
+                },
+                price: {
+                    type: Number
+                }
+            }
+        ]
 
 },
 {

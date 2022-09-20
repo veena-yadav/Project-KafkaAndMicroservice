@@ -1,0 +1,74 @@
+.medicineTableDiv {
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  color: #343a40;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  /* background-color: #0064D2; */
+}
+
+table {
+  width: 800px;
+  margin-top: 80px;
+  border: 1px solid #343a40; 
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+th,
+td {
+   border: 1px solid #343a40; 
+  padding: 16px 24px;
+  text-align: left;
+}
+
+thead th {
+  background-color: #0064D2;
+  color: #fff;
+  width: 25%;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #e9ecef;
+}
+ 
+.input-number {
+width: 80px;
+padding: 0 12px;
+vertical-align: top;
+text-align: center;
+outline: none; }
+
+.input-number,
+.input-number-decrement,
+.input-number-increment {
+border: 1px solid #ccc;
+height: 40px;
+user-select: none; }
+
+.input-number-decrement,
+.input-number-increment {
+display: inline-block;
+width: 30px;
+line-height: 38px;
+background: #f1f1f1;
+color: #444;
+text-align: center;
+font-weight: bold;
+cursor: pointer; }
+.input-number-decrement:active,
+.input-number-increment:active {
+  background: #ddd; }
+
+.input-number-decrement {
+border-right: none;
+border-radius: 4px 0 0 4px; }
+
+.input-number-increment {
+border-left: none;
+border-radius: 0 4px 4px 0; }

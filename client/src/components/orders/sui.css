@@ -1,0 +1,21 @@
+.custom_Grid_124{
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+@media (max-width: 768px) {
+    .custom_Grid_124{
+       
+        grid-template-columns: 1fr;
+    }
+    .custom_Grid_124_item_2{
+        order: 1;
+        margin-bottom: 20px;
+    }
+    .custom_Grid_124_item_1{
+        
+        order: 2;
+    }
+    
+}

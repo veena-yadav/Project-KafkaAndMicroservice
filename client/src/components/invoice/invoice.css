@@ -1,0 +1,36 @@
+/* body{
+    background-color: #f1f1f1;
+} */
+@media only print {
+    body { visibility: hidden; }
+    .printthis { visibility: visible; }
+  }
+
+.adminDetails{
+    /* display: flex;
+    flex-direction: column; */
+    direction: rtl;
+    /* justify-content: flex-end; */
+}
+
+.userDetails{
+    direction: ltr;
+}
+
+.ul_123 {  
+list-style-type: none;  
+/* font-weight: bold;   */
+/* font-size: 20px;   */
+}  
+.center_321 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+.font-bold{
+    font-weight: 700;
+}
+.total-price{
+    font-weight: 900;
+}
